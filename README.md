@@ -1,0 +1,7 @@
+# miaosha
+使用springboot+mybatis搭建JavaWeb电商秒杀系统的基本流程和代码实现
+
+## 项目简介
+### 项目使用了前后端分离的设计方式，在前段的UI使用了html,css,Jquery，图片及metronic框架完成用户注册，登录以及商品展示，下单交易，秒杀倒计时等基本前端功能，然后在接入层使用了springMVC的controller，定义了对应的viewobject，返回了通用的对象，并且在controller层通过通用异常处理的方式结合通用的返回对象，返回了对应的前后端分离的json datastatus模型，在业务层中使用了mybatis的接入以及model层领域模型的概念，完成了用户服务，商品服务，交易服务，活动服务相关核心服务的业务层，并在数据层使用transactional标签，完成对数据的切面，使用数据库mybatis的DAO完成对数据的操作。
+
+### 后续将在项目中引入本地缓存，集中式redis缓存来解决项目的性能问题，将项目在云端部署，对接企业亿级流量秒杀性能瓶颈问题。
