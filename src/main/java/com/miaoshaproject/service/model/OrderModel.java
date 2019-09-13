@@ -1,7 +1,6 @@
 package com.miaoshaproject.service.model;
 
 import java.math.BigDecimal;
-import java.security.PrivateKey;
 
 //用户下单的交易模型
 public class OrderModel {

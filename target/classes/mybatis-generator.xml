@@ -68,7 +68,11 @@
 <!--               enableUpdateByExample="false" enableDeleteByExample="false"-->
 <!--               enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
 
-        <table tableName="promo" domainObjectName="PromoDao" enableCountByExample="false"
+<!--        <table tableName="promo" domainObjectName="PromoDao" enableCountByExample="false"-->
+<!--               enableUpdateByExample="false" enableDeleteByExample="false"-->
+<!--               enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+
+        <table tableName="stock_log" domainObjectName="StockLogDao" enableCountByExample="false"
                enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false"></table>
     </context>

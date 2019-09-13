@@ -16,7 +16,7 @@ public class ValidatorImpl implements InitializingBean {
         final ValidationResult  validationResult = new ValidationResult();
         Set<ConstraintViolation<Object>>  constraintViolationSet= validator.validate(bean);
         if(constraintViolationSet.size() > 0){
-            // 有错误
+            // 出现错误的处理
             validationResult.setHasErrors(true);
             //jdk8:lambda foreach
             constraintViolationSet.forEach(constraintViolation->{

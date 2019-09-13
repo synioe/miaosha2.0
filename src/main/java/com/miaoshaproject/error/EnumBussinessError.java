@@ -13,6 +13,8 @@ public enum EnumBussinessError implements CommonError {
 
     // 30000开头为交易信息错误定义
     STOCK_NOT_ENOUGH(30001,"库存不足"),
+    MQ_SEND_FAIL(30001,"库存异步消息失败"),
+
     ;
 
     private EnumBussinessError(int errCode, String errMsg){
